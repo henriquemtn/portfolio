@@ -3,7 +3,6 @@
 import React from 'react'
 
 import ParticlesComponent from '../components/particles'
-import { Button } from '@/components/ui/button';
 import TopInfo from '@/components/top-info';
 import BottomInfo from '@/components/bottom-info';
 
