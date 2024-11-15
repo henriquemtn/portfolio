@@ -1,5 +1,8 @@
 ---
 import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+import betterUi from "../assets/betterui.png";
+import jobber from "../assets/jobber.png";
 ---
 
 <section id="projects" class="p-4 max-w-2xl mx-auto border-b border-gray-300">
@@ -9,12 +12,11 @@ import { Icon } from "astro-icon/components";
   </div>
   <div class="grid mt-4 space-y-4 grid-cols-1">
     <a href="https://better-ui-zeta.vercel.app/" class="block rounded-lg p-4 border shadow-sm shadow-indigo-100">
-      <img
-        alt=""
-        src="/src/assets/betterui.png"
-        class="h-56 w-full rounded-md object-cover"
+      <Image
+      src={betterUi}
+      alt="betterui"
+      class="h-56 w-full rounded-md object-cover"
       />
-
       <div class="mt-2">
         <dl>
           <div>
@@ -80,12 +82,11 @@ import { Icon } from "astro-icon/components";
       </div>
     </a>
     <a href="https://github.com/henriquemtn/challenge-jobber" class="block rounded-lg p-4 border shadow-sm shadow-indigo-100">
-      <img
-        alt=""
-        src="/src/assets/jobber.png"
-        class="h-56 w-full rounded-md object-cover"
+      <Image
+      src={jobber}
+      alt="jobber"
+      class="h-56 w-full rounded-md object-cover"
       />
-
       <div class="mt-2">
         <dl>
           <div>
