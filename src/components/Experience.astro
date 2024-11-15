@@ -1,0 +1,80 @@
+---
+import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+import avanti from "../assets/avanti.jpeg";
+import vh from "../assets/vh.jpeg";
+---
+
+<section id="experience" class="p-4 max-w-2xl mx-auto border-b border-gray-300">
+  <div class="flex items-center">
+    <Icon name="briefcase" class="text-xl text-gray-500 mr-2" />
+    <h2 class="text-xl">Experiências</h2>
+  </div>
+  <ul class="mt-4">
+    <li>
+      <div class="flex items-center gap-4">
+        <div class="flex flex-col w-full">
+          <div class="flex items-center gap-2">
+            <Image
+              src={avanti}
+              alt="avanti"
+              class="size-8 rounded-md"
+            />
+            <div class="flex flex-col">
+              <h2 class="text-xl">Avanti</h2>
+              <span
+                >Fullstack Developer <span class="text-gray-500"
+                  >- Jun 2024 até o atual momento ( 8 meses )<span></span>
+                </span>
+              </span>
+            </div>
+          </div>
+
+          <div class="py-2">
+            <p class="text-gray-500">
+              Atuei como desenvolvedor fullstack na migração de uma ferramenta
+              interna da Avanti, chamada Jobber, essencial para o apontamento de
+              horas, acompanhamento de tarefas e comunicação com clientes. Meu
+              principal desafio foi reconstruir o frontend, migrando de React
+              puro para Next.js, o que me proporcionou uma curva de aprendizado
+              significativa e uma oportunidade de otimizar o desempenho e a
+              experiência do usuário na plataforma.
+            </p>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="flex items-center gap-4">
+        <div class="flex flex-col w-full">
+          <div class="flex items-center gap-2">
+            <Image
+              src={vh}
+              alt="vh"
+              class="rounded-md"
+              width={32}
+              height={32}
+            />
+            <div class="flex flex-col">
+                <h2 class="text-xl">VH Web Solutions</h2>
+                <span
+                  >Frontend Developer <span class="text-gray-500"
+                    >- Ago 2023 até Jun 2024 ( 11 meses )<span></span>
+                  </span>
+              </span>
+            </div>
+          </div>
+
+          <div class="py-2">
+            <p class="text-gray-500">
+              Tinha como função o Desenvolvimento de Sites, Aplicativos e
+              Sistemas responsivos que atendem às necessidades dos clientes.
+              Montagem de layouts para apresentação, atendimento direto com o
+              cliente e manutenção de software.
+            </p>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</section>

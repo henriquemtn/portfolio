@@ -1,0 +1,106 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<header
+  class="bg-white bg-opacity-70 backdrop-blur fixed top-0 z-10 flex items-center justify-center w-full m-0 md:mt-4"
+>
+  <div
+    class="py-4 mx-auto max-w-2xl w-full flex items-center justify-between border p-4 rounded-md"
+  >
+    <div class="w-full">
+      <a href="/" class="font-semibold text-gray-500 border p-1 rounded-md">
+        HS
+      </a>
+    </div>
+    <nav class="m-0">
+      <ul class="hidden sm:flex sm:items-center sm:gap-2">
+        <li>
+          <a
+            class="group px-4 py-2 rounded-lg hover:bg-gray-bg opacity-60 hover:opacity-100 transition-all"
+            href="#hello"
+            target="_self"
+          >
+            Sobre
+          </a>
+        </li>
+        <li>
+          <a
+            class="group px-4 py-2 rounded-lg hover:bg-gray-bg opacity-60 hover:opacity-100 transition-all"
+            href="#experience"
+            target="_self"
+          >
+            Experiências
+          </a>
+        </li>
+        <li>
+          <a
+            class="group px-4 py-2 rounded-lg hover:bg-gray-bg opacity-60 hover:opacity-100 transition-all"
+            href="#projects"
+            target="_self"
+          >
+            Projetos
+          </a>
+        </li>
+        <li>
+          <a
+            class="group px-4 py-2 rounded-lg hover:bg-gray-bg opacity-60 hover:opacity-100 transition-all"
+            href="#courses"
+            target="_self"
+          >
+            Cursos
+          </a>
+        </li>
+      </ul>
+      <div class="relative sm:hidden">
+        <button class="bg-hamburger bg-no-repeat bg-center peer text-4xl" id="button_aside">≡</button>
+        <aside class="grid fixed top-0 border-l bg-white w-[233px] min-h-screen -right-[233px] peer-focus:right-0 ease-out delay-150 duration-300 rounded-r-[25px] rounded-bl-[25px]" id="aside">
+          <ul class="py-4">
+            <li>
+              <a class="block pl-4 py-3" href="#hello" target="_self"> Sobre </a>
+            </li>
+            <li>
+              <a class="block pl-4 py-3" href="#experience" target="_self"> Experiências </a>
+            </li>
+            <li>
+              <a class="block pl-4 py-3" href="#projects" target="_self"> Blog </a>
+            </li>
+            <li>
+              <a class="block pl-4 py-3" href="#courses" target="_self"> Cursos </a>
+            </li>
+          </ul>
+        </aside>
+        <div
+          id="link-menu"
+          class="absolute p-2 right-0 bg-gray-bg rounded-lg w-44 transition-opacity ease-in-out duration-300 opacity-0 z-40 pointer-events-none"
+        >
+          <ul>
+            <li>
+              <a class="block pl-4 py-3" href="#hello" target="_self"> Sobre </a>
+            </li>
+            <li>
+              <a class="block pl-4 py-3" href="#experience" target="_self"> Experiências </a>
+            </li>
+            <li>
+              <a class="block pl-4 py-3" href="#projects" target="_self"> Blog </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="sm:flex gap-4 w-full justify-end hidden">
+      <a href="https://github.com/henriquemtn">
+        <Icon
+          name="github"
+          class="text-xl text-gray-500 hover:scale-110 transition-all"
+        />
+      </a>
+      <a href="https://www.linkedin.com/in/henriquemtn/">
+        <Icon
+          name="linkedin"
+          class="text-xl text-gray-500 hover:scale-110 transition-all"
+        />
+      </a>
+    </div>
+  </div>
+</header>

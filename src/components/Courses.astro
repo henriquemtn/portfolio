@@ -1,0 +1,132 @@
+---
+import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+import harvard from "../assets/harvard.jpeg";
+import dio from "../assets/dio.jpeg";
+import rocketseat from "../assets/rocketseat.jpeg";
+---
+
+<section id="courses" class="p-4 max-w-2xl mx-auto border-b border-gray-300">
+  <div class="flex items-center">
+    <Icon name="graduate" class="text-xl text-gray-500 mr-2" />
+    <h2 class="text-xl">Formação Academica</h2>
+  </div>
+  <ul class="mt-4 space-y-4">
+    <li>
+      <div class="flex items-center gap-4">
+        <div class="flex flex-col w-full">
+          <div class="flex items-center gap-2">
+            <Image src={harvard} alt="harvard1" class="size-8 rounded-md" />
+            <div class="flex flex-col">
+              <h2 class="text-xl">
+                CS50's Introduction to Programming with Python
+              </h2>
+              <span
+                >Harvard University - <a
+                  class="py-4"
+                  href="https://certificates.cs50.io/cca93398-6bc2-41b7-91e8-edf3779c6e5e.pdf?size=letter"
+                  >Certificado</a
+                >
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="flex items-center gap-4">
+        <div class="flex flex-col w-full">
+          <div class="flex items-center gap-2">
+            <Image src={harvard} alt="harvard2" class="size-8 rounded-md" />
+            <div class="flex flex-col">
+              <h2 class="text-xl">CS50's Introduction to Computer Science</h2>
+              <span
+                >Harvard University - <a
+                  class="py-4"
+                  href="https://cs50.harvard.edu/certificates/435ffb18-9ec8-4da6-a8b8-e146647da1ad"
+                  >Certificado</a
+                >
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="flex items-center gap-4">
+        <div class="flex flex-col w-full">
+          <div class="flex items-center gap-2">
+            <Image src={dio} alt="dio1" class="size-8 rounded-md" />
+            <div class="flex flex-col">
+              <h2 class="text-xl">Typescript Fullstack Developer</h2>
+              <span
+                >DIO - <a
+                  class="py-4"
+                  href="https://www.dio.me/certificate/7C7F0FF5/share"
+                  >Certificado</a
+                >
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+        <div class="flex items-center gap-4">
+          <div class="flex flex-col w-full">
+            <div class="flex items-center gap-2">
+              <Image src={dio} alt="dio2" class="size-8 rounded-md" />
+              <div class="flex flex-col">
+                <h2 class="text-xl">React Developer</h2>
+                <span
+                  >DIO - <a
+                    class="py-4"
+                    href="https://hermes.digitalinnovation.one/certificates/7E52C2D7.pdf?_gl=1*1ee9dao*_ga*MTEyNTgwOTU5OC4xNjk2MDg4MjA5*_ga_7GXMH3CQ72*MTY5NjM5NDA4Ny44LjEuMTY5NjM5OTU0NS42MC4wLjA."
+                    >Certificado</a
+                  >
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex items-center gap-4">
+          <div class="flex flex-col w-full">
+            <div class="flex items-center gap-2">
+              <Image src={dio} alt="dio3" class="size-8 rounded-md" />
+              <div class="flex flex-col">
+                <h2 class="text-xl">DevOps Fundamentals</h2>
+                <span
+                  >DIO - <a
+                    class="py-4"
+                    href="https://www.dio.me/certificate/4BEBFC42/share"
+                    >Certificado</a
+                  >
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex items-center gap-4">
+          <div class="flex flex-col w-full">
+            <div class="flex items-center gap-2">
+              <Image src={rocketseat} alt="rocketseat" class="size-8 rounded-md" />
+              <div class="flex flex-col">
+                <h2 class="text-xl">Curso Online de PHP</h2>
+                <span
+                  >Rocketseat - <a
+                    class="py-4"
+                    href="https://app.rocketseat.com.br/certificates/dd718909-f70a-4fef-bcaf-225d75c0d42a"
+                    >Certificado</a
+                  >
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+</section>
